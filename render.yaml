@@ -1,0 +1,25 @@
+services:
+  # Spring Boot Backend
+  - type: web
+    name: rental-cnct-backend
+    env: docker
+    dockerContext: backend
+    dockerfilePath: backend/Dockerfile
+    plan: free
+    envVars:
+      - key: PORT
+        value: 8080
+
+  # React Frontend Static Site
+  - type: web
+    name: rental-cnct-frontend
+    env: static
+    plan: free
+    rootDir: frontend
+    buildCommand: npm run build
+    publishDir: dist
+    envVars:
+      - key: VITE_API_BASE_URL
+        fromService:
+          name: rental-cnct-backend
+          value: url
