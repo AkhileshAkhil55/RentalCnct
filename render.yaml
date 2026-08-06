@@ -11,9 +11,8 @@ services:
         value: 8080
 
   # React Frontend Static Site
-  - type: web
+  - type: static
     name: rental-cnct-frontend
-    env: static
     plan: free
     rootDir: frontend
     buildCommand: npm run build
