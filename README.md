@@ -1,6 +1,8 @@
-# RentalConnect 🔄
+# RentalCnct 🔄
 
-RentalConnect is a peer-to-peer rental marketplace designed as an **"Airbnb for products"**. Renter communities can browse, search, and book equipment locally, while asset owners can list products, track earnings, and handle handovers with secure refundable deposit calculations.
+RentalCnct is a peer-to-peer rental marketplace designed as an **"Airbnb for products"**. Renter communities can browse, search, and book equipment locally, while asset owners can list products, track earnings, and handle handovers with secure refundable deposit calculations.
+
+🚀 **Live Demo URL**: [https://rental-cnct.vercel.app](https://rental-cnct.vercel.app)
 
 ---
 
