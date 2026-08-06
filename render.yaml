@@ -1,16 +1,15 @@
 services:
-  # Spring Boot Backend (Native Java Runtime - No Credit Card Required)
+  # Spring Boot Backend
   - type: web
     name: rental-cnct-backend
-    runtime: java
-    rootDir: backend
-    buildCommand: ./mvnw clean package -DskipTests
-    startCommand: java -jar target/backend-0.0.1-SNAPSHOT.jar
+    env: docker
+    dockerContext: backend
+    dockerfilePath: backend/Dockerfile
     envVars:
       - key: PORT
         value: 8080
 
-  # React Frontend Static Site (No Credit Card Required)
+  # React Frontend Static Site
   - type: web
     name: rental-cnct-frontend
     runtime: static
